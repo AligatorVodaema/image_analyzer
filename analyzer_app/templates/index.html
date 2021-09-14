@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image analyzer</title>
+    <style type='text/css'>
+        .res {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Counting pixels in image</h1>
+    <p>Put your image here:</p>
+    {% if result %}
+        <p class='res'>{{ result }}</p>
+    {% endif %}
+    
+    <form action='/' enctype="multipart/form-data" method="POST">
+        <input type="file" name='image'>
+        <br><br>
+        <input type="submit" value='send'>
+    </form>
+
+</body>
+</html>
