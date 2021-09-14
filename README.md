@@ -14,6 +14,8 @@ Installation from git:
 Run: $ uvicorn view:APP --reload --host=0.0.0.0 --port=8000
 
 All requests/reponses logs are saved to a folder "logs".
+For tests run:
+$ pytest --tb=line -v -m pixel_counting
 
 Usage:
 1. go to localhost:8000
